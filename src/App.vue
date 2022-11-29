@@ -1,12 +1,13 @@
 <template>
-    <MainLayout>
+    <div id="app">
+        <AppHeader />
         <RouterView />
-    </MainLayout>
+    </div>
 </template>
 
 <script setup>
-import { MainLayout } from './layouts';
 import { RouterView } from 'vue-router';
+import { AppHeader } from './components/Organisms';
 </script>
 
 <style scoped></style>

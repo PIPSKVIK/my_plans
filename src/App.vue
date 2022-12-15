@@ -10,4 +10,8 @@ import { RouterView } from 'vue-router';
 import { AppHeader } from './components/Organisms';
 </script>
 
-<style scoped></style>
+<style>
+#app {
+    height: 100%;
+}
+</style>

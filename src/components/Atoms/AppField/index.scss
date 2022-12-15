@@ -37,5 +37,33 @@
         &::placeholder {
             color: var(--color-inactive-grey);
         }
+        &--error {
+            border-color: var(--color-error) !important;
+        }
+    }
+
+    &__password-eye {
+        position: absolute;
+        right: 10px;
+        top: 36px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        user-select: none;
+        & svg {
+            height: 16px;
+            width: 16px;
+            color: var(--color-line-grey);
+            transition: color 0.2s ease;
+        };
+    }
+
+    &__error {
+        position: absolute;
+        bottom: -16px;
+        left: 2px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: var(--color-error);
     }
 }
